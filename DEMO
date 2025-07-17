@@ -17,7 +17,6 @@ nodes = parser.get_nodes_from_documents(documents)
 print("节点数:", len(nodes))  # 确认文档分块正常:ml-citation{ref="4" data="citationList"}
 
 # 显式启用嵌入计算
-# 替换原有索引构建代码
 try:
     index = VectorStoreIndex.from_documents(
         documents,
